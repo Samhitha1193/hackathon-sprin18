@@ -1,0 +1,146 @@
+Welcome to the hackathon-spring18 wiki!
+
+
+## TEAM PIKACHU
+
+### SAMHITHA TUMMANAPALLI                                 sthfp@mail.umkc.edu                                
+
+### MD USMAN GANI SYED                                                gmsc8c@mail.umkc.edu   
+
+### AKHILA ATLURI                                         vagq2@mail.umkc.edu
+
+### NAVYA RAMYA SIREESHA                                  np7yd@mail.umkc.edu
+
+## CONTENTS:
+
+* OBJECTIVE
+
+* INTRODUCTION
+
+* ANALYTICAL TOOL USED
+
+* INTRODUCTION TO TABLEAU
+
+* PROCEDURE
+
+* ANALYSIS AND PREDICTIONS
+
+* CONCLUSION
+
+                                           OBJECTIVE
+
+To develop interesting analysis, interpretations and predictions by developing the visualizations using any analytical tool for the NASA dataset given. Request logs from NASA which has details like Request from IP, time, HTTP method, URl, response, time to complete the request are provided.
+                                         
+                                          INTRODUCTION
+
+Request logs area record of the requests that the server has processed.
+There is only entry per request received,and commonly in the standard NCSA format.
+We can use tools like webalizer to analyze them conveniently.
+
+                                         ANALYTICAL TOOL USED
+
+TABLEAU
+
+
+                                      INTRODUCTION TO TABLEAU
+Tableau Software is an American computer software company headquartered in Seattle, WA, USA. It generates interactive data visualization products which focused on BI.By using tableau we can generate graphs which represents the data of the particular system.
+
+                                        PROCEDURE
+* Install Tableau on your local machine
+* Select the dataset need to be used. Here we're using the text file which was converted from the tsv file given.
+* Open Tableau Desktop
+* Click on Connect -> text file and select the text file for which you want to develop the visualization.
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-15%20at%206.57.46%20PM.png)
+* Tableau connects to the dataset and creates a preview
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-15%20at%206.58.14%20PM.png)
+* Click on the Go to Worksheet on the bottom left to create the graphs needed.
+* The graphs are easy to create by dragging and dropping the fields on the canvas. More information can be added by dragging the additional fields. We can edit the graphs like changing colour and fonts by using the colour under Marks column in the sheet.
+* Once the graph is generated, we can publish our graphs on Tableau public so that it is visible to everyone.
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/WhatsApp%20Image%202018-04-15%20at%206.07.27%20PM.jpeg)
+
+
+                                       ANALYSIS AND PREDICTIONS
+
+                                     VISUALIZATION 1 - URL/RECORDS
+
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-14%20at%205.12.04%20PM.png)
+
+ANALYSIS : As the number of record increases,load also increases.Therefore pagerank increases
+
+PREDICTION:More chance of system  getting hanged while accessing the URL /images/NASA-logosmall.gif.Hence more security concerns.  
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/akhilahackathon1/urlrecords?publish=yes
+
+                                        VISUALIZATION 2 - TIME/METHOD
+
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-14%20at%205.33.41%20PM.png)
+
+ANALYSIS : Most of the users use GET method,limited no. of users use POST method and moderate  no.of users  HEAD method
+Users take large amount of time to retrieve data and less amount of time to post the data
+
+PREDICTIONS:Distributing the data on different servers so that load balancing is made.
+When multiple users work on same method,there is possibility of radio jamming.
+Hence appropriate measures should be taken.
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/akhilahackathon/timemethod?publish=yes
+
+                                  VISUALIZATION 3 - RECORDS/RESPONSE
+
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-14%20at%206.58.21%20PM.png)
+
+ANALYSIS:As the no. of responses for given records increases,error rate increases.
+There will be more no. of errors  for a given record.So efficiency, and stability decreases.
+
+PREDICTIONS: As the error rate increases ,there is a chance of instability of the system.
+As the error rate increases,data rate also increases.So chance of noise and disturbances may occur
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/hackathon-gani/RequestsdayforJuly1995?publish=yes
+
+                            VISUALIZATION 4 - REQUESTS PER DAY IN JULY 1995
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-14%20at%209.46.14%20PM.png)
+
+ANALYSIS: Weekends(sat,sun) are on: (1,2), (8,9), (15,16),(22,23) . The number of requests/day on weekends is approximately half the number of requests/day on weekdays. So the load is less on weekends and it increases on weekdays.
+
+PREDICTIONS: So we can predict that in future also, the load will be high on weekdays and low on weekends.
+ Number of records with status code 500:The total number of requests for which we received status code 500 is 65. 
+The count of this particular URL "PASTE URL HERE"  is 53. So there might be some problem in the logic of this API. So if we start bug fixing, then this API mist be fixed on priority.
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/hackathon-gani/RequestsdayforJuly1995?publish=yes
+
+                            VISUALIZATION 5 - URLS FOR RESPONSE 500
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-15%20at%205.37.12%20PM.png)
+
+ANALYSIS: Number of records with status code 500:The total number of requests for which we received status code 500 is 65. 
+
+PREDICTIONS: The count of this particular URL "PASTE URL HERE"  is 53. So there might be some problem in the logic of this API. So if we start bug fixing, then this API mist be fixed on priority
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/hackathon-gani2/URLSforresponse500?publish=yes
+
+                           VISUALIZATION 6 - BYTES/METHOD
+
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/Screen%20Shot%202018-04-15%20at%206.46.50%20PM.png)
+
+                          
+ANALYSIS: The number of bytes for getting the data by the user are more when compared to remaining methods like post,head.
+User does’t use the post method in this scenario
+
+PREDICTIONS: As more no.of bytes are used for post method,there will be more memory used for processing the data.
+Hence there will be a mpact on CPU usage time and application time.
+Memory shortage and leaks leads to instability.So we need to optimize garbage collection. 
+
+Published URL : https://public.tableau.com/profile/akhila2708#!/vizhome/hackathon-bytesmethod/BytesMethod?publish=yes
+
+
+
+                VISUALIZATION 7 - URL'S/min(bytes),min(time),min(records),min(response)
+
+![](https://github.com/Samhitha1193/hackathon-sprin18/blob/master/documentation/sheet2.JPG)
+
+ANALYSIS: This graph clearly shows the minimum(bytes),minimum(time),minimum(records) and minimum(responses) used by the url's.
+The total number of url's is 31060.
+The min number of bytes used by the url's is 0.
+The min time taken by the url's is 80,905 ms.
+The min no of responses is 200.
+The minimum no of records used by url's is 1.
+
+Published Url: https://public.tableau.com/profile/navya7673#!/vizhome/hackathon_11/Sheet1?publish=yes
